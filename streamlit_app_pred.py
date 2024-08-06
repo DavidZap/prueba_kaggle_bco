@@ -71,7 +71,7 @@ def plot_shap(model, data, customer_id, X_train):
 
 
     customer_index = X_train[X_train['llave_modelo'] == customer_id].index[0]
-    display_shap_waterfall_plot(explainer, explainer.expected_value, shap_values_cat_train[customer_index],X_train.columns, max_display=20)
+    display_shap_waterfall_plot(explainer, explainer.expected_value, shap_values_cat_train[customer_index],X_train_vars.columns, max_display=20)
 
 
 st.title("Opciones de Pago")
