@@ -97,8 +97,8 @@ def main():
         customer_id = st.selectbox("Choose the Customer", available_customer_ids)
         customer_index = data[data['llave_modelo'] == customer_id].index[0]
 
-        st.write(f"Customer {customer_id}: Actual value for the Customer Churn : {data['var_rpta_alt'].iloc[customer_index]}")
-        st.write(f"Customer {customer_id}: CatBoost Model's prediction for the Customer Churn : {data['pred'].iloc[customer_index]}")
+        st.write(f"Cliente {customer_id}: Valor actual de opción de pago : {data['var_rpta_alt'].iloc[customer_index]}")
+        st.write(f"Cliente {customer_id}: XGBoost predicción para la opción de pago : {data['pred'].iloc[customer_index]}")
         
         X_train = data[["llave_modelo",'prob_auto_cura'
                 ,'valor_cuota_mes_n-2' 
