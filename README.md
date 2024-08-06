@@ -12,9 +12,4 @@ Para ejecutar esta aplicación localmente, necesitas tener instalado:
 
 - Python 3.7 o superior
 - Streamlit
-
-## Instalación
-
-1. Clona este repositorio:
-   ```sh
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+- requierements.txt (en repo)
